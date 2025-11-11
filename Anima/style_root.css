@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ROOTS - COFIGURAÇÃO GERAL DE ESTILIZAÇÃO DA PÁGINA*/
+:root {
+    --cor-primaria: #3685B7;
+    --cor-secundaria: #5DA9B7;
+    --cor-terciaria: #1A495B;
+    --cor-complementar: #FFFFFF;
+    --cor-texto: #334042;
+    --cor-fundo: #3C8477;
+}
+
+:root{
+    --cor-principal: #85CABc;
+    --quarta-cor: #3C8477;
+    --quinta-cor:  ;
+}
+
+
+
+
+
+
+
+
+
+/* VIEWPORT - VISÃO GERAL DA PÁGINA */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-fundo);
+}

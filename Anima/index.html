@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ânima - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico.png" type="image/png">
+    <!-- O CSS será incluído no mesmo arquivo para simplificar, mas manteremos a estrutura de variáveis -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="navbar-logo-link">
+                <img src="img/anima_logo_1.png" alt="anima_logo" class="navbar-logo">
+            </a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="#">Ciências da Computação</a></li>
+                <li><a href="#">Direito</a></li>
+                <li><a href="#">Odontologia</a></li>
+                <li><a href="#">Pedagogia</a></li>
+                <li><a href="#">Psicologia</a></li>
+            </ul>
+
+            <!-- Menu mobile com cards - Mantido para preservar a funcionalidade original, mas estilizado para ser responsivo -->
+            <ul class="nav-links-mobile">
+                <li><a href="pagina_psicologia.html"><img src="img/img_card1.png" alt="Psicologia"></a></li>
+                <li><a href="odontologia.html"><img src="img/img_card2.png" alt="Odontologia"></a></li>
+                <li><a href="pagina_pedagogia.html"><img src="img/img_card3.png" alt="Pedagogia"></a></li>
+                <li><a href="siteQUIZ-main/index.html"><img src="img/img_card4.png" alt="Quiz"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="carousel-container">
+                <!-- Slides do Carrossel -->
+                <div class="banner active">
+                    <img src="img-banner/banner-computacao.jpg" alt="UNIFAGOC Ciência da Computação">
+                </div>
+                <div class="banner">
+                    <img src="img-banner/banner-direito.jpg" alt="UNIFAGOC Direito">
+                </div>
+                <div class="banner">
+                    <img src="img-banner/banner-psicologia.jpg" alt="UNIFAGOC Psicologia">
+                </div>
+                <div class="banner">
+                    <img src="img-banner/banner-odontologia.jpg" alt="UNIFAGOC Odontologia">
+                </div>
+                <div class="banner">
+                    <img src="img-banner/banner-pedagogia.jpeg" alt="UNIFAGOC Pedagogia">
+                </div>
+                <div class="banner">
+                    <img src="img-banner/banner-psicologia.jpg" alt="UNIFAGOC Psicologia">
+                </div>
+
+                <!-- Botões de Navegação -->
+                <a class="prev" onclick="plusSlides(-1 )">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Indicadores (Dots) -->
+                <div class="dots-container">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="anima-container">
+            <div class="anima-logo">
+                <img src="img/Ellipse 1.png" alt="Logo Anima Profissões">
+            </div>
+
+            <div class="anima-texto">
+                <h2>O que é o Anima Profissões?</h2>
+                <p>
+                    O <strong>Anima Profissões</strong> é uma extensão do Projeto Ânima criada para ajudar os alunos a
+                    descobrirem suas vocações e entenderem melhor suas áreas de interesse.
+                    Em parceria com os cursos de Psicologia, Odontologia, Pedagogia, Direito e Ciências da Computação, o
+                    projeto apresenta de forma leve e interativa as possibilidades do futuro profissional,
+                    aproximando os estudantes das carreiras e despertando o interesse por diferentes caminhos do
+                    conhecimento.
+                </p>
+            </div>
+
+            <div class="anima-video">
+                <div class="video-box">
+                    <!-- Substituído por um placeholder mais genérico para vídeo -->
+                    <img src="img/exemplo1.png" alt="Vídeo Anima Profissões">
+                </div>
+                <p class="legenda">
+                    Neste vídeo, mostramos como foi desenvolvido o projeto e entrevistas feitas na Escola Raul Seixas,
+                    apresentando as etapas, atividades e experiências vividas com os alunos durante a ação.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="cta-unifagoc">
+            <div class="container-unifagoc">
+                <div class="logo">
+                    <img src="img/eclipseFagoc.png" alt="Logo UNIFAGOC">
+                </div>
+                <div class="texto">
+                    <h3>Venha ser UNIFAGOC!</h3>
+                    <p>Descubra seu futuro e conheça o seu curso com o Anima Profissões.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cursos-section">
+            <div class="cursos-grid">
+                <div class="card">
+                    <img src="img/computacao.png" alt="Ciências da Computação">
+                    <div class="info">
+                        <img src="img/icone-computacao.png" alt="Ícone Computação">
+                        <p>Ciências da Computação</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/odontologia.png" alt="Odontologia">
+                    <div class="info">
+                        <img src="img/icone-odontologia.png" alt="Ícone Odontologia">
+                        <p>Odontologia</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/psicologia.png" alt="Psicologia">
+                    <div class="info">
+                        <img src="img/icone-psicologia.png" alt="Ícone Psicologia">
+                        <p>Psicologia</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/pedagogia.png" alt="Pedagogia">
+                    <div class="info">
+                        <img src="img/icone-pedagogia.png" alt="Ícone Pedagogia">
+                        <p>Pedagogia</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/direito.png" alt="Direito">
+                    <div class="info">
+                        <img src="img/icone-direito.png" alt="Ícone Direito">
+                        <p>Direito</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="footer-logo-section">
+                        <img src="img/anima_logo_1.png" alt="Ânima Logo" class="footer-logo-img">
+                        <h2>Ânima</h2>
+                        <p class="footer-subtitle">UNIFAGOC</p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/UniFagoc" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/unifagoc" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/school/faculdade-governador-ozanam-coelho" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://x.com/unifagoc_" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/channel/UCt6ztAwTZxzJEVQ2FOjLhxA" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Atendimento</h3>
+                        <ul>
+                            <li><a href="tel:08000375600">0800-037-5600</a></li>
+                            <li><a href="tel:3235395600">(32 ) 3539-5600</a></li>
+                            <li><a href="mailto:faleconosco@unifagoc.edu.br">faleconosco@unifagoc.edu.br</a></li>
+                            <li><a href="mailto:atendimento@unifagoc.edu.br">atendimento@unifagoc.edu.br</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Dados Institucionais</h3>
+                        <ul>
+                            <li>CNPJ: 02.270.109/0001-74</li>
+                            <li>Ubá, MG 36506-022 Rua Dr. Adjalme da Silva Botelho, 20</li>
+                            <li>Segoc – Sociedade Educacional Governador Ozanam Coelho LTDA</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-middle">
+                    <div class="footer-column">
+                        <h3>Graduação</h3>
+                        <ul>
+                            <li><a href="https://unifagoc.edu.br/curso/ciencia-da-computacao">Ciência da Computação</a></li>
+                            <li><a href="https://unifagoc.edu.br/curso/odontologia-noturno">Odontologia</a></li>
+                            <li><a href="https://unifagoc.edu.br/curso/direito">Direito</a></li>
+                            <li><a href="https://unifagoc.edu.br/curso/psicologia">Psicologia</a></li>
+                            <li><a href="https://unifagoc.edu.br/curso/pedagogia">Pedagogia</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Unifagoc</h3>
+                        <ul>
+                            <li><a href="https://unifagoc.edu.br/contato">Fale Conosco</a></li>
+                            <li><a href="https://unifagoc.edu.br/imprensa">Imprensa</a></li>
+                            <li><a href="https://unifagoc.edu.br/institucional">Institucional</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Vestibular</h3>
+                        <ul>
+                            <li><a href="https://unifagoc.edu.br/medicina/inscricoes-abertas-para-o-vestibular-de-medicina-unifagoc-2026-1-estude-na-top-1-minas-e-top-5-brasil">Inscrições</a></li>
+                            <li><a href="https://unifagoc.edu.br/unifagoc/editais">Edital</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Notícias</h3>
+                        <ul>
+                            <li><a href="https://unifagoc.edu.br/noticias">Jornal UNIFAGOC</a></li>
+                            <li><a href="https://unifagoc.edu.br/eventos">Eventos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ânima. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </main>
+    <!-- O script index.js é necessário para o carrossel funcionar, mas não foi fornecido. -->
+    <script src="index.js"></script>
+</body>
+
+</html>
