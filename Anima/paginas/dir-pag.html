@@ -11,411 +11,392 @@
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="navbar-container">
-            <div class="navbar-logo">Ânima</div>
-            <div class="nav-links desktop-nav">
-                <a href="#" class="nav-link">Cursos de Computação</a>
-                <a href="#" class="nav-link">Psicologia</a>
-                <a href="#" class="nav-link">Pedagogia</a>
-                <a href="#" class="nav-link">Direito</a>
-                <a href="#" class="nav-link">Odontologia</a>
-            </div>
-            <button class="menu-toggle" id="menuToggle">☰</button>
-            <div class="nav-links mobile-nav" id="mobileMenu">
-                <a href="#" class="nav-link">Cursos de Computação</a>
-                <a href="#" class="nav-link">Psicologia</a>
-                <a href="#" class="nav-link">Pedagogia</a>
-                <a href="#" class="nav-link">Direito</a>
-                <a href="#" class="nav-link">Odontologia</a>
-            </div>
-        </div>
-    </nav>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="navbar-logo">
+                <img src="img-comp/anima_logo_1.png" alt="anima_logo">
+            </a>
 
-    <!-- Hero Section -->
-    <section class="hero-section" data-animate="hero">
-        <div class="container">
-            <div class="hero-grid">
-                <div class="hero-content" data-animate="hero-text">
-                    <h1>Direito na UNIFAGOC</h1>
-                    <p>O curso de Direito é uma das formações mais tradicionais e abrangentes do meio acadêmico, voltado
-                        para o estudo das normas jurídicas que regem a sociedade e das formas de aplicação da justiça.
-                        Ao longo da graduação, o estudante desenvolve não apenas o conhecimento técnico das leis, mas
-                        também a capacidade crítica, ética e argumentativa necessária para lidar com as diversas
-                        situações que envolvem o convívio social, político e econômico.</p>
-                    <button class="btn btn-primary">QUERO CURSAR</button>
-                </div>
-                <div class="hero-image" data-animate="hero-image">
-                    <div class="icon-placeholder">⚖️</div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-    <!-- Services Section -->
-    <section class="services-section" data-animate="services">
-        <div class="container">
-            <h2>Serviços</h2>
-            <div class="services-grid">
-                <div class="service-card" style="background-color: #4a8f7f;" data-animate="service-0">
-                    <h3>Vestibular</h3>
-                    <p>Graduação<br>Medicina<br>Pós-Graduação</p>
-                    <button class="btn btn-secondary">CONHECER SERVIÇO</button>
-                </div>
-                <div class="service-card" style="background-color: #22b6a4;" data-animate="service-1">
-                    <h3>Iniciação Científica</h3>
-                    <p>A Iniciação Científica da UNIFAGOC tem por objetivo incentivar os estudantes da instituição a
-                        desenvolverem o pensamento científico por meio de pesquisas propostas por professores.</p>
-                    <button class="btn btn-secondary">CONHECER SERVIÇO</button>
-                </div>
-                <div class="service-card" style="background-color: #5a8fa8;" data-animate="service-2">
-                    <h3>Extensão</h3>
-                    <p>Encontre a capacitação ideal para ampliar seus conhecimentos, desenvolver novas habilidades e
-                        impulsionar sua carreira!</p>
-                    <button class="btn btn-secondary">CONHECER SERVIÇO</button>
-                </div>
-                <div class="service-card" style="background-color: #22b6a4;" data-animate="service-3">
-                    <h3>Teste vocacional</h3>
-                    <p>Se você tem entre 16 e 18 anos e ainda não sabe qual caminho seguir após o ensino médio, o teste
-                        vocacional pode ajudar a descobrir suas aptidões.</p>
-                    <button class="btn btn-secondary">CONHECER SERVIÇO</button>
+            <ul class="nav-links">
+                <li><a href="#computacao" class="nav-link">Ciências da Computação</a></li>
+                <li><a href="#direito" class="nav-link">Direito</a></li>
+                <li><a href="#odontologia" class="nav-link">Odontologia</a></li>
+                <li><a href="#pedagogia" class="nav-link">Pedagogia</a></li>
+                <li><a href="#psicologia" class="nav-link">Psicologia</a></li>
+            </ul>
+
+            <ul class="nav-links-mobile">
+                <li><a href="pagina_psicologia.html"><img id="img_menu_mobile" src="img/img_card1.png"
+                            alt="img_mobile"></a></li>
+                <li><a href="odontologia.html"><img id="img_menu_mobile" src="img/img_card2.png" alt="img_mobile"></a>
+                </li>
+                <li><a href="pagina_pedagogia.html"><img id="img_menu_mobile" src="img/img_card3.png"
+                            alt="img_mobile"></a></li>
+                <li><a href="siteQUIZ-main/index.html"><img id="img_menu_mobile" src="img/img_card4.png"
+                            alt="img_mobile"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="hero-banner scroll-animate">
+            <img src="/hero-banner.jpg" alt="Sala de aula de programação" class="banner-img" id="banner-img">
+        </section>
+
+        <!-- Sobre o Curso -->
+        <section class="about-section scroll-animate">
+            <div class="container">
+                <div class="about-card">
+                    <div class="about-logo">
+                        <img src="img-dir/unifagoc.png" alt="UNIFAGOC Logo">
+                    </div>
+                    
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>O curso de Direito do UNIFAGOC vai muito além das leis e dos tribunais: é a formação de profissionais comprometidos com a justiça, a ética e a transformação social. Reconhecido pela excelência acadêmica e por seu corpo docente qualificado, o curso — com nota máxima no MEC — une teoria e prática, preparando juristas capazes de compreender a sociedade em sua complexidade e atuar com responsabilidade, empatia e protagonismo na construção de um futuro mais justo.</p>
+                        </div>
+                        
+                        <div class="about-cta">
+                            <div class="scales-icon">
+                                <img src="img-dir/logo.png" alt="Balança da Justiça">
+                            </div>
+                            <button class="botao ripple-btn">QUERO CURSAR</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section class="about-section" data-animate="about">
-        <div class="container">
-            <h2>Direito na UNIFAGOC</h2>
-            <div class="about-grid">
-                <div class="about-text" data-animate="about-text">
-                    <p>O curso de Direito é uma das formações mais tradicionais e abrangentes do meio acadêmico, voltado
-                        para o estudo das normas jurídicas que regem a sociedade e das formas de aplicação da justiça.
-                        Ao longo da graduação, o estudante desenvolve não apenas o conhecimento técnico das leis, mas
-                        também a capacidade crítica, ética e argumentativa necessária para lidar com as diversas
-                        situações que envolvem o convívio social, político e econômico.</p>
-                </div>
-                <div class="about-icon" data-animate="about-icon">
-                    <div class="icon-placeholder">⚖️</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Disciplines Section -->
-    <section class="disciplines-section" data-animate="disciplines">
-        <div class="container">
-            <h2>Disciplinas do Curso de Direito</h2>
-            <p class="section-subtitle">A estrutura curricular do curso abrange uma ampla gama de disciplinas, que vão
-                desde as bases teóricas e filosóficas do Direito — como Introdução ao Estudo do Direito, Filosofia
-                Jurídica e Sociologia Jurídica — até áreas específicas, como Direito Constitucional, Civil, Penal,
-                Administrativo, Trabalhista, Empresarial, Tributário e Internacional. Essa variedade permite que o
-                bacharel adquira uma formação generalista e sólida, sendo capaz de compreender e atuar em diferentes
-                ramos do sistema jurídico brasileiro.</p>
-
-            <div class="disciplines-grid">
-                <div class="discipline-card" data-animate="discipline-0">
-                    <div class="discipline-icon">📚</div>
-                    <h3>Introdução ao Estudo do Direito</h3>
-                    <p>Essa disciplina é o primeiro contato do estudante com o universo jurídico. Nela, o aluno aprende
-                        os conceitos fundamentais do Direito, sua origem histórica, estrutura, funções e importância na
-                        organização da sociedade. O objetivo é compreender o Direito como fenômeno social, cultural e
-                        normativo, desenvolvendo a capacidade de interpretar leis e princípios com base na ética e na
-                        justiça.</p>
-                </div>
-                <div class="discipline-card" data-animate="discipline-1">
-                    <div class="discipline-icon">🏛️</div>
-                    <h3>Filosofia Jurídica</h3>
-                    <p>A Filosofia Jurídica convida o aluno a refletir sobre os fundamentos morais e filosóficos que
-                        sustentam o Direito. Através do estudo de pensadores clássicos e contemporâneos, o estudante
-                        aprende a analisar criticamente os conceitos de justiça, lei, liberdade e moralidade. Essa
-                        disciplina forma juristas conscientes, capazes de compreender o Direito não apenas como um
-                        conjunto de regras, mas como uma construção humana voltada à dignidade e ao bem comum.</p>
-                </div>
-                <div class="discipline-card" data-animate="discipline-2">
-                    <div class="discipline-icon">👥</div>
-                    <h3>Sociologia Jurídica</h3>
-                    <p>O Direito está profundamente ligado à sociedade, e a Sociologia Jurídica busca compreender essa
-                        relação. A disciplina analisa como as normas jurídicas influenciam o comportamento social e, ao
-                        mesmo tempo, como os fenômenos sociais moldam o Direito. O aluno é incentivado a observar a
-                        realidade de forma crítica, reconhecendo que a aplicação da lei deve levar em conta contextos
-                        culturais, econômicos e humanos.</p>
-                </div>
-                <div class="discipline-card" data-animate="discipline-3">
-                    <div class="discipline-icon">⚖️</div>
-                    <h3>Direito Constitucional</h3>
-                    <p>O Direito Constitucional é o pilar central do ordenamento jurídico. Ele estuda a Constituição
-                        Federal, que define a estrutura do Estado, os direitos e garantias fundamentais e a separação
-                        dos poderes. Essa disciplina capacita o aluno a interpretar e aplicar a Constituição de forma
-                        técnica e ética, compreendendo seu papel essencial na preservação da democracia e na defesa da
-                        cidadania.</p>
-                </div>
-                <div class="discipline-card" data-animate="discipline-4">
-                    <div class="discipline-icon">📋</div>
-                    <h3>Direito Civil</h3>
-                    <p>O Direito Civil regula as relações jurídicas entre pessoas, abrangendo temas como contratos,
-                        propriedade, família, sucessões e responsabilidade civil. É uma das áreas mais amplas do curso e
-                        tem impacto direto na vida cotidiana de todos os cidadãos. O estudo dessa disciplina permite que
-                        o futuro jurista atue com equilíbrio entre a segurança jurídica e o respeito às relações
-                        humanas.</p>
-                </div>
-                <div class="discipline-card" data-animate="discipline-5">
-                    <div class="discipline-icon">⚔️</div>
-                    <h3>Direito Penal</h3>
-                    <p>O Direito Penal define os crimes e as penas, protegendo os bens jurídicos fundamentais da
-                        sociedade, como a vida, a liberdade e o patrimônio. Essa disciplina forma profissionais
-                        preparados para lidar com a aplicação da lei penal com justiça, humanidade e responsabilidade,
-                        compreendendo que o sistema punitivo deve estar aliado à proteção dos direitos humanos e à
-                        reintegração social do indivíduo.</p>
-                </div>
-                <div class="discipline-card" data-animate="discipline-6">
-                    <div class="discipline-icon">🏢</div>
-                    <h3>Direito Administrativo</h3>
-                    <p>Voltado para o estudo da Administração Pública, o Direito Administrativo regula as atividades do
-                        Estado e sua relação com os cidadãos. A disciplina aborda temas como licitações, contratos
-                        públicos, responsabilidade do Estado e controle dos atos administrativos. O aluno aprende a
-                        compreender o funcionamento da máquina pública e a importância da legalidade, da moralidade e da
-                        eficiência no serviço público.</p>
-                </div>
-                <div class="discipline-card" data-animate="discipline-7">
-                    <div class="discipline-icon">👔</div>
-                    <h3>Direito Trabalhista</h3>
-                    <p>Essa disciplina analisa as normas que regem as relações de trabalho e as garantias dos
-                        trabalhadores. O estudante aprende sobre contratos de trabalho, direitos e deveres do empregador
-                        e do empregado, sindicatos e justiça do trabalho. O foco é promover a justiça social e a
-                        dignidade humana nas relações laborais, conciliando o equilíbrio entre capital e trabalho.</p>
-                </div>
-                <div class="discipline-card" data-animate="discipline-8">
-                    <div class="discipline-icon">💼</div>
-                    <h3>Direito Empresarial</h3>
-                    <p>O Direito Empresarial trata das atividades econômicas e das relações jurídicas que envolvem
-                        empresas, empresários e consumidores. Abrange temas como constituição de sociedades, falências,
-                        contratos comerciais e propriedade intelectual. O aluno é preparado para atuar em um mercado
-                        competitivo, com visão estratégica, ética e foco na sustentabilidade dos negócios.</p>
-                </div>
-                <div class="discipline-card" data-animate="discipline-9">
-                    <div class="discipline-icon">🌍</div>
-                    <h3>Direito Internacional</h3>
-                    <p>O Direito Tributário estuda o sistema de arrecadação de tributos e o equilíbrio entre a
-                        necessidade do Estado em obter recursos e o dever do cidadão em contribuir. O estudante aprende
-                        sobre impostos, taxas, contribuições e princípios constitucionais que regem a tributação. A
-                        disciplina forma profissionais capazes de atuar com precisão técnica e responsabilidade fiscal.
-                    </p>
-                </div>
-                <div class="discipline-card" data-animate="discipline-10">
-                    <div class="discipline-icon">💰</div>
-                    <h3>Direito Tributário</h3>
-                    <p>O Direito Internacional regula as relações entre Estados, organizações e indivíduos em nível
-                        global. A disciplina abrange temas como tratados, comércio exterior, direitos humanos e
-                        cooperação internacional. O aluno desenvolve uma visão ampla e moderna do Direito, compreendendo
-                        o papel do jurista em um mundo interconectado, multicultural e em constante transformação.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Career Section -->
-    <section class="career-section" data-animate="career">
-        <div class="container">
-            <h2>Formei e Agora já sou Advogado?</h2>
-
-            <div class="career-intro" data-animate="career-intro">
-                <div class="career-image">
-                    <div class="icon-placeholder large">📄</div>
-                </div>
-            </div>
-
-            <div class="career-options">
-                <div class="career-option" data-animate="career-option-0">
-                    <h3>Advocacia Privada</h3>
-                    <p>Mesmo sem a carteira da OAB, o bacharel em Direito dispõe de diversas alternativas de atuação
-                        profissional. É possível trabalhar em empresas privadas, órgãos públicos, instituições
-                        financeiras, departamentos de compliance, recursos humanos, gestão pública, mediação e
-                        arbitragem, entre outros. O conhecimento jurídico é amplamente valorizado em cargos que envolvem
-                        interpretação de normas, elaboração de contratos, tomada de decisões e análise de riscos legais.
-                    </p>
-                </div>
-                <div class="career-option" data-animate="career-option-1">
-                    <h3>Carreira Pública</h3>
-                    <p>Ao concluir o curso, o estudante recebe o título de Bacharel em Direito. No entanto, para exercer
-                        a advocacia — isto é, atuar como advogado representando pessoas físicas ou jurídicas —, é
-                        indispensável a aprovação no Exame da Ordem dos Advogados do Brasil (OAB). Essa prova, de
-                        caráter nacional e eliminatório, avalia o conhecimento técnico e prático adquirido durante a
-                        graduação e é composta por duas fases: uma objetiva e outra prático-profissional. Apenas após
-                        ser aprovado e inscrito na OAB o profissional poderá assinar petições, defender causas e
-                        representar clientes em juízo.</p>
-                </div>
-            </div>
-
-            <div class="careers-list">
-                <div class="career-item" data-animate="career-item-0">
-                    <div class="career-item-content">
-                        <h3>⚖️ Promotor de Justiça</h3>
-                        <p>O promotor de justiça atua no Ministério Público e tem como principal missão defender os
-                            interesses da sociedade. Ele é o fiscal da lei, responsável por propor ações penais contra
-                            quem comete crimes, além de zelar pelo cumprimento dos direitos fundamentais, como os da
-                            infância, meio ambiente e patrimônio público. A carreira exige senso de justiça, ética e
-                            dedicação ao bem coletivo, sendo uma das mais respeitadas do sistema jurídico brasileiro.
-                        </p>
+        <!-- Serviços -->
+        <section class="services-section scroll-animate">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="card card1 card-animate">
+                        <div class="card-content">
+                            <h2>Vestibular</h2>
+                            <p>Graduação, Medicina, Pós-Graduação</p>
+                        </div>
+                        <button class="botao1 ripple-btn">CONHECER SERVIÇO</button>
                     </div>
 
-                </div>
-
-                <div class="career-item" data-animate="career-item-1">
-                    <div class="career-item-content">
-                        <h3>🚔 Delegado de Polícia</h3>
-                        <p>O delegado é a autoridade responsável por conduzir investigações criminais, coordenar
-                            inquéritos e garantir que as provas sejam obtidas de forma legal. Ele atua na fase inicial
-                            do processo penal, apurando fatos, colhendo depoimentos e determinando diligências que
-                            subsidiarão o trabalho do Ministério Público e do Judiciário. Essa carreira combina técnica
-                            jurídica, liderança e responsabilidade, pois o delegado é peça-chave na busca pela verdade e
-                            na proteção da ordem pública.</p>
+                    <div class="card card2 card-animate">
+                        <div class="card-content">
+                            <h2>Iniciação Científica</h2>
+                            <p>O Vestibular da UNIFAGOC oferece aos estudantes da instituição o desenvolvimento e pensamento científico por meio de pesquisas inovadoras por professores e pesquisadores da instituição e promove a formação científica e acadêmica do aluno.</p>
+                        </div>
+                        <button class="botao1 ripple-btn">CONHECER SERVIÇO</button>
+                    </div>
+                
+                    <div class="card card3 card-animate">
+                        <div class="card-content">
+                            <h2>Extensão</h2>
+                            <p>Encontre a capacidade ideal para ampliar seus conhecimentos, desenvolver novas habilidades e impulsionar sua carreira!</p>
+                        </div>
+                        <button class="botao1 ripple-btn">CONHECER SERVIÇO</button>
                     </div>
 
-                </div>
-
-                <div class="career-item" data-animate="career-item-2">
-                    <div class="career-item-content">
-                        <h3>🛡️ Defensor Público</h3>
-                        <p>O defensor público exerce uma das funções mais nobres do sistema de justiça: garantir o
-                            acesso ao Direito a todos, especialmente às pessoas em situação de vulnerabilidade social
-                            que não têm condições de pagar por um advogado. Além da defesa criminal, o defensor atua em
-                            causas cíveis, de família, trabalhistas e administrativas, promovendo a igualdade e a
-                            cidadania. A carreira exige sensibilidade humana, empatia e compromisso com os direitos
-                            fundamentais.</p>
+                    <div class="card card4 card-animate">
+                        <div class="card-content">
+                            <h2>Teste Vocacional</h2>
+                            <p>Se você tem entre 16 e 18 anos e ainda não sabe qual caminho seguir entre muitas jovens, a boa notícia é que o teste vocacional pode ajudar a descobrir suas aptidões e facilitar essa importante decisão.</p>
+                        </div>
+                        <button class="botao1 ripple-btn">CONHECER SERVIÇO</button>
                     </div>
-
-                </div>
-
-                <div class="career-item" data-animate="career-item-3">
-                    <div class="career-item-content">
-                        <h3>📋 Procurador</h3>
-                        <p>O procurador representa juridicamente o Estado em suas diversas esferas — federal, estadual
-                            ou municipal — defendendo os interesses públicos e garantindo que as ações governamentais
-                            estejam de acordo com a lei. Ele atua tanto em processos judiciais quanto na consultoria
-                            jurídica de órgãos públicos, orientando gestores e prevenindo litígios. Trata-se de uma
-                            carreira de grande relevância institucional, que une conhecimento técnico, responsabilidade
-                            e dedicação à administração pública.</p>
-                    </div>
-
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Opportunities Section -->
-    <section class="opportunities-section" data-animate="opportunities">
-        <div class="container">
-            <div class="opportunities-content">
-                <div class="opportunities-text">
-                    <p>Em síntese, o curso de Direito vai muito além da advocacia. Ele forma profissionais aptos a atuar
-                        de forma ética, crítica e estratégica em múltiplos setores da sociedade. Seja no serviço
-                        público, na iniciativa privada ou na academia, o bacharel em Direito encontra inúmeras
-                        oportunidades de atuação e crescimento, sendo essa uma das formações mais completas e versáteis
-                        do meio universitário.</p>
-                </div>
-                <div class="opportunities-image">
-                    <div class="icon-placeholder large">👥</div>
+        <!-- Direito na UNIFAGOC -->
+        <section class="direito-section scroll-animate">
+            <div class="container">
+                <div class="direito-card">
+                    <div class="direito-text">
+                        <h2>Direito na UNIFAGOC</h2>
+                        <p>O curso de Direito é uma das formações mais tradicionais e abrangentes do meio acadêmico, voltado para o estudo das normas jurídicas que regem a sociedade e das formas de aplicação da justiça. Ao longo da graduação, o estudante desenvolve não apenas o conhecimento técnico das leis, mas também a capacidade crítica, ética e argumentativa necessária para lidar com as diversas situações que envolvem o convívio social, político e econômico.</p>
+                    </div>
+                    <div class="direito-image">
+                        <img src="img-dir/advogado3.png" alt="Tribunal">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Disciplinas -->
+        <section class="disciplinas-section scroll-animate">
+            <div class="container">
+                <div class="disciplinas-container">
+                    <h2 class="section-title">Disciplinas do Curso de Direito</h2>
+                    <p class="section-subtitle">A estrutura curricular do curso abrange uma ampla gama de disciplinas, que vão desde as bases teóricas e filosóficas do Direito — como Introdução ao Estudo do Direito, Filosofia Jurídica e Sociologia Jurídica — até áreas específicas, como Direito Constitucional, Civil, Penal, Administrativo, Trabalhista, Empresarial, Tributário e Internacional. Essa variedade permite que o bacharel adquira uma formação generalista e sólida, sendo capaz de compreender e atuar em diferentes ramos do sistema jurídico brasileiro.</p>
+
+                    <div class="disciplinas-grid">
+                        <div class="disciplina-card card-animate">
+                            <div class="disciplina-icon">📚</div>
+                            <h3>Introdução ao Estudo do Direito</h3>
+                            <p>Esta disciplina é o ponto de partida para adentrar o universo jurídico. Nela, o aluno aprende os conceitos fundamentais do Direito, suas fontes e a organização da sociedade.</p>
+                        </div>
+
+                        <div class="disciplina-card card-animate">
+                            <div class="disciplina-icon">⚖️</div>
+                            <h3>Filosofia Jurídica</h3>
+                            <p>A Filosofia Jurídica convida o aluno a refletir sobre os fundamentos morais e filosóficos que sustentam o Direito.</p>
+                        </div>
+
+                        <div class="disciplina-card card-animate">
+                            <div class="disciplina-icon">👥</div>
+                            <h3>Sociologia Jurídica</h3>
+                            <p>O Direito está profundamente ligado à sociedade e a Sociologia Jurídica busca compreender essa relação.</p>
+                        </div>
+
+                        <div class="disciplina-card card-animate">
+                            <div class="disciplina-icon">📄</div>
+                            <h3>Direito Constitucional</h3>
+                            <p>O Direito Constitucional é a espinha dorsal do ordenamento jurídico. Ele estuda a Constituição Federal.</p>
+                        </div>
+
+                        <div class="disciplina-card card-animate">
+                            <div class="disciplina-icon">⚖️</div>
+                            <h3>Direito Civil</h3>
+                            <p>O Direito Civil regula as relações jurídicas entre pessoas, abrangendo temas como contratos, propriedade, família.</p>
+                        </div>
+
+                        <div class="disciplina-card card-animate">
+                            <div class="disciplina-icon">🛡️</div>
+                            <h3>Direito Penal</h3>
+                            <p>O Direito Penal define os crimes e as penas, protegendo os bens jurídicos fundamentais da sociedade.</p>
+                        </div>
+
+                        <div class="disciplina-card card-animate">
+                            <div class="disciplina-icon">🏛️</div>
+                            <h3>Direito Administrativo</h3>
+                            <p>Voltado para o estudo da Administração Pública, o Direito Administrativo regula as atividades do Estado.</p>
+                        </div>
+
+                        <div class="disciplina-card card-animate">
+                            <div class="disciplina-icon">💼</div>
+                            <h3>Direito Trabalhista</h3>
+                            <p>Essa disciplina analisa as normas que regem as relações de trabalho.</p>
+                        </div>
+
+                        <div class="disciplina-card card-animate">
+                            <div class="disciplina-icon">🏢</div>
+                            <h3>Direito Empresarial</h3>
+                            <p>O Direito Empresarial trata das atividades econômicas e das relações jurídicas que envolvem empresas.</p>
+                        </div>
+
+                        <div class="disciplina-card card-animate">
+                            <div class="disciplina-icon">💰</div>
+                            <h3>Direito Tributário</h3>
+                            <p>O Direito Tributário estuda o sistema de arrecadação de tributos e a obrigação dos contribuintes.</p>
+                        </div>
+
+                        <div class="disciplina-card card-animate">
+                            <div class="disciplina-icon">🌍</div>
+                            <h3>Direito Internacional</h3>
+                            <p>O Direito Internacional regula as relações entre Estados, organizações e indivíduos em nível global.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formei e Agora já sou Advogado? -->
+        <section class="oab-section scroll-animate">
+            <div class="container">
+                <div class="oab-card">
+                    <h2 class="oab-title">Formei e Agora já sou Advogado?</h2>
+                    <div class="oab-content">
+                        <div class="oab-image">
+                            <img src="img-dir/oab.png" alt="Estudante preparando para OAB">
+                        </div>
+                        <div class="oab-text">
+                            <div class="oab-box">
+                                <p>Mesmo sem a carteira da OAB, o bacharel em Direito dispõe de diversas alternativas de atuação profissional. É possível trabalhar em empresas privadas, órgãos públicos, instituições financeiras, departamentos de compliance, recursos humanos, gestão pública, mediação e arbitragem, entre outros.</p>
+                            </div>
+                            <div class="oab-box">
+                                <p>Ao concluir o curso, o estudante recebe o título de Bacharel em Direito, para exercer a advocacia — isto é, atuar como advogado representando pessoas físicas ou jurídicas — é indispensável a aprovação no Exame da Ordem dos Advogados do Brasil (OAB).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carreiras -->
+        <section class="carreiras-section scroll-animate">
+            <div class="container">
+                <div class="carreira-item card-animate">
+                    <div class="carreira-text">
+                        <div class="carreira-header">
+                            <div class="carreira-icon">🎓</div>
+                            <h3>Juiz</h3>
+                        </div>
+                        <p>O juiz é o profissional responsável por garantir a aplicação da lei e a preservação da justiça nos conflitos levados ao Poder Judiciário. Cabe a ele analisar provas, interpretar normas jurídicas e proferir sentenças de forma imparcial.</p>
+                    </div>
+                    <div class="carreira-image">
+                        <img src="img-dir/juiz2.png" alt="Juiz">
+                    </div>
+                </div>
+
+                <div class="carreira-item carreira-reverse card-animate">
+                    <div class="carreira-text">
+                        <div class="carreira-header">
+                            <div class="carreira-icon">🎓</div>
+                            <h3>Promotor de Justiça</h3>
+                        </div>
+                        <p>O promotor de justiça é o representante do Ministério Público e tem a missão defender os interesses da sociedade. Ele é o fiscal da lei, responsável por propor ações penais contra crimes.</p>
+                    </div>
+                    <div class="carreira-image">
+                        <img src="img-dir/juiz.png" alt="Promotor">
+                    </div>
+                </div>
+
+                <div class="carreira-item card-animate">
+                    <div class="carreira-text">
+                        <div class="carreira-header">
+                            <div class="carreira-icon">🎓</div>
+                            <h3>Delegado de Polícia</h3>
+                        </div>
+                        <p>O delegado é a autoridade responsável por conduzir investigações criminais, coordenar inquéritos e garantir que as provas sejam obtidas de forma legal.</p>
+                    </div>
+                    <div class="carreira-image">
+                        <img src="img-dir/policia.png" alt="Delegado">
+                    </div>
+                </div>
+
+                <div class="carreira-item carreira-reverse card-animate">
+                    <div class="carreira-text">
+                        <div class="carreira-header">
+                            <div class="carreira-icon">🎓</div>
+                            <h3>Defensor Público</h3>
+                        </div>
+                        <p>O defensor público exerce uma das funções mais nobres do sistema de justiça: garantir o acesso ao direito a pessoas em situação de vulnerabilidade social.</p>
+                    </div>
+                    <div class="carreira-image">
+                        <img src="img-dir/advogado2.png" alt="Defensor">
+                    </div>
+                </div>
+
+                <div class="carreira-item card-animate">
+                    <div class="carreira-text">
+                        <div class="carreira-header">
+                            <div class="carreira-icon">🎓</div>
+                            <h3>Procurador</h3>
+                        </div>
+                        <p>O procurador representa juridicamente o Estado em suas diversas esferas — federal, estadual ou municipal — defendendo os interesses públicos.</p>
+                    </div>
+                    <div class="carreira-image">
+                        <img src="img-dir/advogado.png" alt="Procurador">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Final -->
+        <section class="final-section scroll-animate">
+            <div class="container">
+                <div class="final-card">
+                    <div class="final-image">
+                        <img src="img-dir/sala.png" alt="Sala de aula">
+                    </div>
+                    <div class="final-text">
+                        <div class="final-box">
+                            <p>Em síntese, o curso de Direito vai muito além da advocacia. Ele abre portas para atuar de forma ética e crítica em diversos setores — seja no serviço público, na iniciativa privada ou na academia. O Bacharel em Direito encontra inúmeras oportunidades de atuação e crescimento, sendo essa uma das formações mais completas e versáteis do ensino universitário.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer" data-animate="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h3>Ânima</h3>
-                    <p>COM APOIO UNIFAGOC</p>
-                    <div class="social-links">
-                        <a href="#" class="social-icon">a</a>
-                        <a href="#" class="social-icon">💬</a>
-                        <a href="#" class="social-icon">📷</a>
-                        <a href="#" class="social-icon">in</a>
-                        <a href="#" class="social-icon">𝕏</a>
-                        <a href="#" class="social-icon">▶️</a>
+   <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="footer-logo-section">
+                        <img src="img/anima_logo_1.png" alt="Ânima Logo" class="footer-logo-img">
+                        <h2>Ânima</h2>
+                        <p class="footer-subtitle">UNIFAGOC</p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/UniFagoc" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/unifagoc" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/school/faculdade-governador-ozanam-coelho" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://x.com/unifagoc_" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/channel/UCt6ztAwTZxzJEVQ2FOjLhxA" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Atendimento</h3>
+                        <ul>
+                            <li><a href="tel:08000375600">0800-037-5600</a></li>
+                            <li><a href="tel:3235395600">(32 ) 3539-5600</a></li>
+                            <li><a href="mailto:faleconosco@unifagoc.edu.br">faleconosco@unifagoc.edu.br</a></li>
+                            <li><a href="mailto:atendimento@unifagoc.edu.br">atendimento@unifagoc.edu.br</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Dados Institucionais</h3>
+                        <ul>
+                            <li>CNPJ: 02.270.109/0001-74</li>
+                            <li>Ubá, MG 36506-022 Rua Dr. Adjalme da Silva Botelho, 20</li>
+                            <li>Segoc – Sociedade Educacional Governador Ozanam Coelho LTDA</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="footer-section">
-                    <h4>Atendimento</h4>
-                    <ul>
-                        <li>0800-037-5600</li>
-                        <li>(32) 3539-5600</li>
-                        <li>faleconosco@unifagoc.edu.br atendimento@unifagoc.edu.br</li>
-                    </ul>
-                </div>
+                <div class="footer-middle">
+                    <div class="footer-column">
+                        <h3>Graduação</h3>
+                        <ul>
+                            <li><a href="https://unifagoc.edu.br/curso/ciencia-da-computacao">Ciência da Computação</a></li>
+                            <li><a href="https://unifagoc.edu.br/curso/odontologia-noturno">Odontologia</a></li>
+                            <li><a href="https://unifagoc.edu.br/curso/direito">Direito</a></li>
+                            <li><a href="https://unifagoc.edu.br/curso/psicologia">Psicologia</a></li>
+                            <li><a href="https://unifagoc.edu.br/curso/pedagogia">Pedagogia</a></li>
+                        </ul>
+                    </div>
 
-                <div class="footer-section">
-                    <h4>Dados Institucionais</h4>
-                    <ul>
-                        <li>Razão - Sociedade Educacional Governador Ozanam Coelho LTDA</li>
-                        <li>CNPJ: 02.270.109/0005-74</li>
-                        <li>Ubá, MG 36506-022 Rua Dr. Adjalme da Silva Botelho, 20</li>
-                    </ul>
-                </div>
+                    <div class="footer-column">
+                        <h3>Unifagoc</h3>
+                        <ul>
+                            <li><a href="https://unifagoc.edu.br/contato">Fale Conosco</a></li>
+                            <li><a href="https://unifagoc.edu.br/imprensa">Imprensa</a></li>
+                            <li><a href="https://unifagoc.edu.br/institucional">Institucional</a></li>
+                        </ul>
+                    </div>
 
-                <div class="footer-section">
-                    <h4>Graduação</h4>
-                    <ul>
-                        <li>Administração</li>
-                        <li>Biomedicina</li>
-                        <li>Ciência da Computação</li>
-                        <li>Ciências Contábeis</li>
-                        <li>Direito</li>
-                        <li>Educação Física - Bacharelado</li>
-                        <li>Educação Física - Licenciatura</li>
-                        <li>Estética e Cosmética</li>
-                        <li>Farmácia</li>
-                        <li>Fisioterapia</li>
-                        <li>Medicina</li>
-                        <li>Nutrição</li>
-                        <li>Odontologia - Noturno</li>
-                        <li>Pedagogia</li>
-                        <li>Psicologia</li>
-                    </ul>
-                </div>
+                    <div class="footer-column">
+                        <h3>Vestibular</h3>
+                        <ul>
+                            <li><a href="https://unifagoc.edu.br/medicina/inscricoes-abertas-para-o-vestibular-de-medicina-unifagoc-2026-1-estude-na-top-1-minas-e-top-5-brasil">Inscrições</a></li>
+                            <li><a href="https://unifagoc.edu.br/unifagoc/editais">Edital</a></li>
+                        </ul>
+                    </div>
 
-                <div class="footer-section">
-                    <h4>Unifagoc</h4>
-                    <ul>
-                        <li>Fale Conosco</li>
-                        <li>Imprensa</li>
-                        <li>Institucional</li>
-                        <li>Área do Aluno</li>
-                        <li>Área do Professor</li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Vestibular</h4>
-                    <ul>
-                        <li>Graduação</li>
-                        <li>Medicina</li>
-                        <li>Pós-Graduação</li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Notícias</h4>
-                    <ul>
-                        <li>Jogos Universitários UNIFAGOC</li>
-                        <li>Game Party</li>
-                        <li>Novos Cursos</li>
-                    </ul>
+                    <div class="footer-column">
+                        <h3>Notícias</h3>
+                        <ul>
+                            <li><a href="https://unifagoc.edu.br/noticias">Jornal UNIFAGOC</a></li>
+                            <li><a href="https://unifagoc.edu.br/eventos">Eventos</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>2025 Ânima. Todos os direitos reservados.</p>
+                <p>&copy; 2025 Ânima. Todos os direitos reservados.</p>
             </div>
-        </div>
-    </footer>
-
-    <script src="comp.js"></script>
+        </footer>
+    <script src="direito.js"></script>
 </body>
-
 </html>
